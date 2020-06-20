@@ -1,11 +1,8 @@
 import { Router } from 'express'
-
+import { getPoints, savePoint } from './pointContoller'
 const api = Router()
 
-api.get('/', (req, res) => {
-  res.send('Web full stack api')
-})
-api.get('/point', () => {})
-api.post('/point', () => {})
+api.get('/point', getPoints)
+api.post('/point', savePoint)
 
 export default api
