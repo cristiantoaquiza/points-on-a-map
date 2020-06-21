@@ -1,7 +1,8 @@
 import React from 'react'
+import Map from './Map'
 
 const App = () => {
-  return <h1>Web full stack ui</h1>
+  return <Map />
 }
 
 export default App
